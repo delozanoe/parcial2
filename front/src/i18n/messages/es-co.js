@@ -5,7 +5,7 @@ export default {
     hello: "Hola",
     homes: "Casas",
     spaces: "Mis espacios",
-    smart: "Smart Home",
+    smart: "Casa inteligente",
     username: "Usuario",
     password: "Contraseña",
     login: "Entrar",
@@ -14,5 +14,12 @@ export default {
       "Tu tienes {money, plural, =0 { nada} one {# un millón} other {# millones}}",
     myRooms: "Mis habitaciones",
     stats: "Estadísticas",
+    abrev: "Cambiar Lenguaje",
+    device: "Dispositivo",
+    value: "Valor",
+    en: "Ingles",
+    es:"Español",
+    stats: "Estadísticas",
+    statsTitle: "Uso de energia - Hoy"
   },
 };

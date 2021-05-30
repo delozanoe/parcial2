@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import "./Card.scss";
 
 export const Card = (props) => {
+  props = props["props"];
   return (
+    
     <div className="card card-home">
       <Link className="card-home-img-link" to={`/homes/${props.id}`}>
+        {localStorage.setItem("homeId",props.id)}
         {props.type === "house" ? (
           <img src="/home.png" className="card-home-img-top" alt="Icon Home" />
         ) : (

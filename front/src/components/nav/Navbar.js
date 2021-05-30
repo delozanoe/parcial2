@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import { FormattedMessage } from "react-intl";
+import { LOCALES } from "../../i18n/locales";
+import {I18nSelect} from "../../components/i18nSelect/I18nSelect"
 
 export const Navbar = ({ setLanguage }) => {
   return (
@@ -27,6 +29,9 @@ export const Navbar = ({ setLanguage }) => {
               <Link className="nav-link active" aria-current="page" to="/homes">
                 <FormattedMessage id="spaces" />
               </Link>
+            </div>
+            <div className="navbar-nav-controls">
+              <I18nSelect setLanguage={setLanguage}></I18nSelect>
             </div>
             <div className="navbar-nav-controls">
              {/** here lang selector */  }

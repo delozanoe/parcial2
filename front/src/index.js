@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/custom.scss";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
@@ -11,3 +12,4 @@ ReactDOM.render(<App />, document.getElementById("root"));
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+serviceWorker.register();
