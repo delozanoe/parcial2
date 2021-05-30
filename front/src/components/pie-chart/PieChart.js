@@ -9,7 +9,7 @@ export const PieChart = (props) => {
   let data = rooms.map((room) => {
     return { "item":room.name ,"count": room["powerUsage"].value,"unit": room["powerUsage"].unit};
   });
-
+  console.log(data)
 
   useEffect(() => {
     // Get positions for each data object
@@ -55,7 +55,7 @@ export const PieChart = (props) => {
       .on("mouseover", (e, d) => {
         tooldiv
           .style("visibility", "visible")
-          .text(`${d.data.item}: `  `${d.data.count}` ` ${d.data.unit}` );
+          .text(`${d.data.item}: `+`${d.data.count}`+ ` ${d.data.unit}` );
       })
       .on("mouseout", () => {
         tooldiv.style("visibility", "hidden");
