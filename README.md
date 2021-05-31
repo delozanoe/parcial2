@@ -19,3 +19,5 @@ Link repo: https://github.com/delozanoe/parcial2.git
  
 
 A continuación, respaldo esta declaración consignando mi nombre y código de estudiante: Daniel Lozano - 201730679
+
+#No olvidar correr npm i
